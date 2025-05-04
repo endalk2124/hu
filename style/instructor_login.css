@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #595959;
+    --secondary-color: #595959;
+}
+
+.auth-title {
+    color: var(--primary-color);
+}
+
+.auth-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.auth-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.role-icon {
+    color: var(--primary-color);
+}
+/* Footer Styling */
+.footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

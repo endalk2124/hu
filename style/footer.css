@@ -1,0 +1,131 @@
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 3rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4a6bff;
+  }
+  
+  .footer-logo-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    color: #374151;
+  }
+  
+  .footer-description {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer-heading {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-link {
+    color: #6b7280;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: #111827;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-copyright {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: #6b7280;
+    transition: color 0.2s ease;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .social-icon:hover {
+    color: #4a6bff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-copyright {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Animation for hover effects */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .footer-link, .social-icon {
+    animation: fadeIn 0.3s ease-out;
+  }

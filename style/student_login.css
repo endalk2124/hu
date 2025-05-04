@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #595959;
+    --secondary-color: #595959;
+}
+
+.auth-title {
+    color: var(--primary-color);
+}
+
+.auth-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.auth-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.role-icon {
+    color: var(--primary-color);
+}
+
+/* student registration css */
+
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+.registration-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.registration-card:hover {
+    transform: translateY(-5px);
+}
+.form-control {
+    border: 2px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+.btn-primary {
+    background: linear-gradient(135deg, #4a90e2, #2c6cb0);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+.password-hint {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+.department-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%234a90e2' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+@media (max-width: 768px) {
+    .registration-card {
+        margin: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffc107;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: none;
+    animation: slideIn 0.5s ease-out, slideOut 0.5s ease-out 2s forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(100%); opacity: 0; }
+}
+/* Footer Styling */
+.footer {
+    margin-top: 50px; /* Adds space above the footer */
+    padding: 20px 0; /* Vertical padding for content inside the footer */
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center; /* Center-aligns the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #6c757d; /* Gray text color */
+    position: relative; /* Ensures proper positioning */
+    width: 100%; /* Full-width footer */
+    bottom: 0; /* Sticks to the bottom of the page */
+}
+
+.footer a {
+    color: #2563eb; /* Blue link color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underlines links on hover */
+}
+/* Footer Styling */
+.footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Toast Notification */
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#toast .toast-header {
+    padding: 10px 15px;
+    background-color: #fff3cd;
+    color: #664d03;
+    font-weight: bold;
+}
+
+#toast .toast-body {
+    padding: 15px;
+    color: #333;
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}

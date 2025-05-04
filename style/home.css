@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hu_campus.jpg') center/cover no-repeat fixed;
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-section .btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Quick Stats */
+.quick-stats {
+    padding: 60px 0;
+    background: #1a1a1a;
+    color: white;
+}
+
+.stat-item h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Key Features */
+.features-section {
+    padding: 80px 0;
+    background: white 
+}
+
+.feature-item {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Announcements */
+.announcements-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.announcement-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Navigation Bar (Custom Styles) */
+.navbar {
+    background: linear-gradient(135deg, #000000, #000000);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    background: #003f7f;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background: #0056b3;
+}
+
+/* Button Colors */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .stat-item h2 {
+        font-size: 1.5rem;
+    }
+    .feature-item i {
+        font-size: 2.5rem;
+    }
+}

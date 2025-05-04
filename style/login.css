@@ -1,0 +1,67 @@
+
+        /* General Page Styling */
+        body {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            min-height: 100vh;
+        }
+
+        /* Auth Card Styling */
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .auth-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .auth-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c6cb0;
+        }
+
+        .auth-btn {
+            background: linear-gradient(135deg, #4a90e2, #2c6cb0);
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .auth-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    

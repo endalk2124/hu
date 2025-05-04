@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Hidden by default on smaller screens */
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        transform: translateX(0); /* Always visible on larger screens */
+    }
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: #007bff;
+    border-left-color: #007bff;
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 250px; /* Matches sidebar width */
+    padding: 2rem;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0; /* Full width when sidebar is hidden */
+    }
+}
+
+.card {
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.alert {
+    margin-top: 1rem;
+}
+
+.pagination {
+    justify-content: flex-end;
+}
