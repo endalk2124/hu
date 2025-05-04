@@ -1,0 +1,23 @@
+Component Structure:
+
+React components are replaced with PHP includes and Bootstrap components
+
+Instead of props, we use PHP variables and loops
+
+Styling:
+
+Tailwind CSS classes are replaced with Bootstrap classes
+
+Custom animations are implemented with CSS instead of Tailwind directives
+
+State Management:
+
+Authentication state would be handled by PHP sessions instead of React hooks
+
+Dynamic Content:
+
+Data that would come from APIs in React now comes from PHP arrays or database queries
+
+Icons:
+
+Lucide icons are replaced with Bootstrap Icons
